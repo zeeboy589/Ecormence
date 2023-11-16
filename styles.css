@@ -1,0 +1,345 @@
+
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #e3e6f3;
+    height: 100px;
+    display: flex;
+align-items: center;
+padding: 0 30px;
+}
+.container > div:nth-child(2) > a{
+    color: #00000090;
+    text-decoration:none;
+    font-size: 18px;
+    position: relative;
+   
+ 
+}
+
+.container > div:nth-child(2) > a::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: 1s;
+}
+
+.container > div:nth-child(2) > a:hover::after {
+    width: 30px;
+}
+
+
+.logo{
+   
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+.header-menus{
+flex-grow: 1;
+flex-shrink: 1;
+display: flex;
+justify-content: space-between;
+gap:10px;
+}
+.active{
+    position: relative;
+    color: #088178 !important;
+    text-decoration: none;
+
+}
+.active::after{
+    content: "";
+    border-bottom: 2px solid #088178;
+    position: absolute;
+    left: 0;
+    width:30px; 
+    bottom: -3px;
+}
+.mainheader{
+   position: fixed; width: 100%;  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.bg{
+    background-image: url(./img/hero4.png);
+    height: 100vh;
+    width: 100%;
+    background-size:cover;
+    background-position: 40% 20%;
+    
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    
+}.bgcontant{
+    margin-left: 7% ;
+}
+.bgcontant > h3{
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    color: #222;
+}
+.bgcontant >h1 {
+    font-size: 48px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    color: #222;
+}
+.bgcontant > p{
+    color: #222;
+    font-size: 18px;
+    margin: 20px 0;;
+}
+.feature{
+
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 60px auto;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.features{
+    width: 180px;
+    height: 200px;
+    padding: 30px 0;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.collection{
+   
+    justify-content: center;
+    text-align: center;
+    margin: 80px 0px 50px 0px;
+
+
+}
+.collection >h1{
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.collection >p{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   gap:30px
+}
+   
+.productcontant{
+    width: 280px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    overflow: hidden;
+    border-radius: 25px;
+
+  
+}
+.productcontant >img{
+    height: 300px;
+    width: 100%;
+    border-radius: 35px;
+    padding: 15px;
+}
+.mainprod{
+    background-color: yellow;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+
+}
+.prod1{
+    background-image: url(./img/banner/b17.jpg);
+    height: 70px;
+    width: 550px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  
+}
+.prod2{
+    background-image: url(./img/banner/b10.jpg);
+    height: 450px;
+    width: 550px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: green;
+}
+.banner{
+    background-image: url(./img/banner/b2.jpg);
+    text-align: center;
+    margin-top: 50px;
+    padding:   25px 0 ;
+  
+   
+}
+.banner2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px 0px 40px 0px;
+  
+    background-size: 100% 100%;
+    background-position: auto;
+    gap:30px
+   
+}
+.bannera{
+    background-image: url(./img/banner/b17.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: clamp(350px, 100%, 550px);
+    height: 260px;
+}
+.aaa{
+    margin: 70px 0px 50px 20px;
+    width: 300px;
+    color: white;
+ 
+}
+.bannerb{
+    background-image: url(./img/banner/b10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: clamp(350px, 100%, 550px);
+    height: 260px;
+}
+.sale{
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.sale1{
+    background-image: url(./img/banner/b7.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+   
+    
+}
+.sale2{
+    background-image: url(./img/banner/b4.jpg);
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 200px;
+    background-size: 100% 100%;
+}
+.sale3{
+    background-image: url(./img/banner/b18.jpg); background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 350px;
+    object-fit: cover;
+    height: 200px;
+}
+.salep{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(236, 226, 226);
+    margin: 7px 0px;
+    font-weight: 600;
+}
+.p1{
+    font-size: 17px;
+    color: rgb(235, 77, 77);
+ font-weight: bolder;
+}
+
+
+
+.blue{
+    background-color: #041e42;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    gap:30px;
+    padding: 0 20px 0 20px;
+}
+.blue1{
+    width: clamp(280px , 100%, 400px);
+    margin-bottom: -40px;
+ 
+}
+.input1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: clamp(280px , 70%, 550px);
+    margin-top: 5px;
+
+    
+}
+.input{
+    font-size: 18px;
+    width: clamp(280px , 100%, 350px);
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    font-size: 14px;
+
+}
+.input:focus{
+    outline: none;
+}
+
+.inputbutt{
+    background-color: #088178;
+    color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footera >p{
+    line-height: 25px;
+    
+}
+@media screen and ( max-width:450px ) {
+   header{
+    display: none;
+   }
+    
+}@media screen and ( max-width:750px ) {
+
+    .bg{
+     background-position: 70% 0;
+    }
+     
+}
+    @media screen and ( max-width:750px ) {
+.blue{
+    flex-direction: column;
+}
+     
+}
+
+
+    

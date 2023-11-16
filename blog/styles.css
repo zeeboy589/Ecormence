@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #e3e6f3;
+    height: 100px;
+    display: flex;
+align-items: center;
+padding: 0 30px;
+}
+.container > div:nth-child(2) > a{
+    color: #00000090;
+    text-decoration:none;
+    font-size: 18px;
+    position: relative;
+   
+ 
+}
+
+.container > div:nth-child(2) > a::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: 1s;
+}
+
+.container > div:nth-child(2) > a:hover::after {
+    width: 30px;
+}
+
+
+.logo{
+   
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+.header-menus{
+flex-grow: 1;
+flex-shrink: 1;
+display: flex;
+justify-content: space-between;
+gap:10px;
+}
+.active{
+    position: relative;
+    color: #088178 !important;
+    text-decoration: none;
+
+}
+.active::after{
+    content: "";
+    border-bottom: 2px solid #088178;
+    position: absolute;
+    left: 0;
+    width:30px; 
+    bottom: -3px;
+}
+.mainheader{
+   position: fixed; width: 100%;  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+.bg{
+    background-image: url(./b19.jpg);
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px;
+    background-size: 100%;
+}
+.bgcontant{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.bgcontantp1{
+    font-size: 46px;font-weight: 900;
+}
+.bgcontantp2{
+        font-size: 16px;margin-top: 0px;font-weight: 400;
+}
+.main{
+    padding: 150px 150px 0px;
+}
+.mainb1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 90px;
+    width: 100%;
+  
+}
+.mainh1{
+    font-size: 20px;color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mainp1{
+ font-size: 16px;color: #465b52;
+}
+.mainp2{
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.h13{
+      font-size: 70px; position: absolute; top:-50px ; z-index: -1;left: 0; 
+}
+
+.immg{
+     height:100%;width: 100%;
+}
+.imgdiv{
+    width: 50%; height:300px; margin-right:40px
+}
+.text{
+    width: 50%;
+}
+.blue{
+    background-color: #041e42;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    gap:30px;
+    padding: 0 20px 0 20px;
+}
+.blue1{
+    width: clamp(280px , 100%, 400px);
+    margin-bottom: -40px;
+ 
+}
+.input1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: clamp(280px , 70%, 550px);
+
+    
+}
+.input{
+    font-size: 18px;
+    width: clamp(280px , 100%, 350px);
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    font-size: 14px;
+
+}
+.input:focus{
+    outline: none;
+}
+
+.inputbutt{
+    background-color: #088178;
+    color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+
+}
+.bluep1{
+    color:white;font-size: 25px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bluep2{
+    color: #818ea0;font-size: 15px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;margin: 10px 0px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footerh1{
+    color: #222;margin: 10px 0px;
+}
+.footerp1{
+    font-size: 18px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-bottom: 10px;
+}
+.accounth1{
+    color: #222;margin: 10px 0px;
+}
+.gatewayp{
+    margin: 15px 0px;
+}
+.img1{
+    width: 100%;
+}
+.footera >p{
+    line-height: 25px;
+    
+}
+@media screen and (max-width : 600px){
+    .mainb1{
+       
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+    }
+      
+   
+    .main{
+        padding: 120px 0px 0px 0;
+    }
+    .imgdiv{
+        width: 80%;
+        padding: 2px;
+    }
+
+    .text{
+        margin-top: 30px;
+        width: 80%;
+    }
+    .blue{
+        width: 100%;
+        flex-direction: column;
+       
+    }
+    .inputbutt{
+        margin-top: 5px;
+    }
+    .h13{
+        margin-left: 30px;
+    }
+
+
+
+}
